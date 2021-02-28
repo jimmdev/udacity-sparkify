@@ -30,3 +30,5 @@ Essentially there are two main functions that can be run.
 All SQL-queries to create, drop and fill the database tables are centrally stored in the file **sql_queries.py**.
 For testing purposes there is a jupyter notebook called **test.ipynb**.
 The jupyter notebook file **etl.ipynb** further describes the pipeline.
+
+This branch holds a version compatible with newer Python.
