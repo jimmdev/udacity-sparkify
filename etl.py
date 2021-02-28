@@ -35,7 +35,7 @@ def process_log_file(cur, filepath):
     t = pd.to_datetime(df['ts'], unit='ms')
     
     # insert time data records
-    time_data = {'timestamp': t, 'hour': t.dt.hour, 'day': t.dt.day, 'week': t.dt.isocalendar().week,
+    time_data = {'timestamp': t, 'hour': t.dt.hour, 'day': t.dt.day, 'week': t.dt.week,
                  'year': t.dt.year, 'month': t.dt.month, 'year': t.dt.year, 'weekday': t.dt.weekday}
     time_df = pd.DataFrame(time_data)
     for i, row in time_df.iterrows():
